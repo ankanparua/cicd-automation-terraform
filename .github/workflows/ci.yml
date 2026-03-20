@@ -40,3 +40,6 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
+      
+      - name: Terraform Plan (Drift Detection)
+        run: terraform plan -detailed-exitcode
